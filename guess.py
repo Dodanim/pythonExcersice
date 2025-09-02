@@ -1,13 +1,8 @@
-noOfBananas = 10
+from random import randint
 
-noOfCoconuts = 12
-
-noOfKiwis = 20
-
-noOfPineapples = 13
-
-noOfExoticFruits = noOfBananas + noOfCoconuts + noOfKiwis + noOfPineapples
-
-print('Sunny Side Fruit Imports / Exports PLC')
-
-print('Total pieces of fruit in stock: ' + noOfExoticFruits)
+numberUser = int(input("Guess the magic number between 1 to 10: "))
+numberMachine = randint(1,10)
+if(numberUser == numberMachine):
+    print("You won!")
+else :
+    print("You lose!")
